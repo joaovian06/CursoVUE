@@ -1,0 +1,132 @@
+@media screen and (max-width: 479px) {
+  ul {
+    text-align: center;
+  }
+
+
+  li.menu-link {
+    display: block;
+    margin: 10px;
+  }
+
+  /*HERO*/
+  .hero {
+    padding: 80px 15px;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    display: block;
+    width: 100%;
+  }
+  /*FIM HERO*/
+
+  /*MAIN CONTENT*/
+  .main-content {
+    padding: 15px;
+  }
+  /*FIM MAIN CONTENT*/
+
+  /*CONTATO*/
+  .contact {
+    padding: 30px;
+  }
+  /*FIM CONTATO*/
+
+  /*FOOTER*/
+  .footer li.footer-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .copy {
+    text-align: center;
+  }
+
+  .footer-list {
+    text-align: center;
+  }
+  /*FIM FOOTER*/
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 880px) {
+  ul {
+    text-align: center;
+  }
+
+  /*HERO*/
+  .hero {
+    padding: 80px;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .hero-button {
+    display: block;
+    width: 100%;
+  }
+  /*FIM HERO*/
+
+  /*MAIN CONTENT*/
+  .main-content {
+    padding: 30px;
+    margin-top: auto;
+  }
+  /*FIM MAIN CONTENT*/
+
+  /*CONTATO*/
+  .contact {
+    padding: 30px;
+  }
+  /*FIM CONTATO*/
+
+  /*FOOTER*/
+  .footer li.footer-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .copy {
+    text-align: center;
+  }
+
+  .footer-list {
+    text-align: center;
+  }
+  /*FIM FOOTER*/
+}
+
+@media screen and (min-width: 881px) {
+  /*HERO*/
+  .hero {
+    height: auto;
+    padding: 100px;
+  }
+  /*FIM HERO*/
+
+  .lg-2 { width: 20%; }
+  .lg-3 { width: 33.33333%; }
+  .lg-5 { width: 50%; }
+  .lg-7 { width: 66.66666%; }
+  .lg-8 { width: 80%; }
+}

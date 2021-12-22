@@ -1,0 +1,145 @@
+*, *:after, *:before {
+  -webkit-box-sizing:  border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: rgb(14, 40, 78);
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 20px;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+}
+
+.list-link{
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+a {
+  list-style-type: none;
+}
+/*FIM NAVBAR*/
+
+/*HERO*/
+.hero {
+  background-image: url('../imgs/hero.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  padding: 200px 100px 0 100px;
+  text-align: center;
+  color: #000;
+}
+
+.hero-title {
+  font-size: 38px;
+}
+
+.hero-text {
+  font-size: 16px;
+  max-width: 700px;
+  color: #000;
+}
+
+.hero-button {
+  border: none;
+  background-color: lightblue;
+  color: black;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.hero-button:hover{
+  background-color: skyblue;
+}
+/*FIM HERO*/
+
+/*MAIN CONTENT*/
+.main-content {
+  background-color: #fff;
+  padding: 100px;
+  height: auto;
+}
+
+.main-content p {
+  color: #000;
+}
+
+.content-icon {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.content-title {
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.content-text {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+/*FIM MAIN CONTENT*/
+
+/*CONTATO*/
+.contact {
+  background-color: grey;
+  height: auto;
+  padding: 100px;
+}
+
+.hero-button.no-margin-top{
+  margin-top: 0;
+}
+/*FIM CONTATO*/
+
+/*FOOTER*/
+.footer {
+  background-color: rgb(14, 40, 78);
+  height: auto;
+  padding: 15px;
+}
+
+.footer ul {
+  padding: 0;
+  text-align: left;
+}
+
+.footer li.footer-list {
+  display: block;
+  color: #fff;
+  margin: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a, p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.copy {
+  margin: 0;
+  text-align: right;
+}
+/*FIM FOOTER*/
