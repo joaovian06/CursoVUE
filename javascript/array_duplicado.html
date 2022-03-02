@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array duplicado</title>
+</head>
+<body>
+  <script>
+    var arrayDuplicado = [1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
+
+    // var arrayNovo = arrayDuplicado.filter((valor, index, array) => {
+    //   return array.indexOf(valor) == index;
+    // });
+
+    // console.log(arrayNovo);
+
+    var arrayNovo = [
+      ...
+      new Set(arrayDuplicado)
+    ];
+
+    console.log(arrayNovo);
+  </script>
+</body>
+</html>

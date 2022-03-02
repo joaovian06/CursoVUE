@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>event listener</title>
+</head>
+<body>
+  <h1 id='meu-id'>title</h1>
+
+  <script type="text/javascript">
+    // eventos:
+    // click, mouseover, mouseout, resize, mousemove, keydown, keyup
+    var title = document.getElementById('meu-id');
+
+    window.addEventListener('resize', event => {
+      var h1 = document.getElementById('meu-id');
+
+      if (h1.clientWidth < 600){
+        h1.style = 'color: red';
+      } else {
+        h1.style = 'color: blue';
+      }
+    });
+  </script>
+</body>
+</html>

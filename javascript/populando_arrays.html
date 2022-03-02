@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>populando arrays</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var meuArray = new Array(10).fill(null).map(function (val, index, array) {
+      return { id: index, nome: 'joao' + index }
+    });
+
+    meuArray[0].nome = 'pedro';
+
+    console.log(meuArray)
+  </script>
+</body>
+</html>

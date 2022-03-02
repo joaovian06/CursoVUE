@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array</title>
+</head>
+<body>
+  <script>
+    var meuArray = [
+      {
+        id: 1,
+        nome: 'Pedro'
+      },
+      {
+        id: 2,
+        nome: 'Lucas'
+      },
+      {
+        id: 3,
+        nome: 'Joao'
+      },
+      {
+        id: 4,
+        nome: 'Mateus'
+      }
+    ];
+
+    var meuCallback = function(valor, index, arrayCompleto) {
+      console.log(valor, index, arrayCompleto);
+
+      if(arrayCompleto.length == index + 1) {
+        console.log('Chegou no Final');
+      }
+    }
+
+    meuArray.forEach(meuCallback);
+
+    var arrayNovo = meuArray.filter(function(valor, index, arrayCompleto) {
+      if(valor.id == 2){
+        return true
+      }
+
+      // simplificando
+      // return valor.id == 2;
+    });
+
+    var arrayMap = meuArray.map((valor, index, arrayCompleto) => {
+      return {
+        ...valor,
+        isSelected: false,
+      };
+    });
+
+    console.table(arrayMap);
+  </script>
+</body>
+</html>

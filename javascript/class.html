@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes</title>
+</head>
+<body>
+  <script>
+    class Usuario {
+      constructor() {
+        this.id = 1;
+      }
+
+      getId() {
+        return this.id;
+      }
+
+      setId(novoId) {
+        this.id = novoId;
+      }
+    }
+
+    class Util {
+      static getDataPortuguesBrasil() {
+        var data = new Date();
+
+        return data.toLocaleString('pt-BR');
+      }
+    }
+
+    console.log(Util.getDataPortuguesBrasil());
+
+    var usuario = new Usuario();
+
+    console.log(usuario);
+    console.log(usuario.getId());
+
+    usuario.setId(10);
+    console.log(usuario.getId());
+  </script>
+</body>
+</html>
